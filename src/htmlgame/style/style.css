@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.barun {
+  font-family: "NanumBarunGothic";
+  font-weight: 400;
+  font-style: normal;
+}
+.barun-b {
+  font-family: "NanumBarunGothicBold";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  gap: 10px;
+}
+
+.epilogue {
+  font-family: "epilogue-210", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.f32 {
+  font-size: 32px;
+}
+
+.f40 {
+  font-size: 40px;
+}
+
+.f56 {
+  font-size: 56px;
+}
+
+.navigation {
+  z-index: 10;
+  background-color: oklch(32.11% 0 0);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  vertical-align: middle;
+  top: 0;
+  white-space: nowrap;
+}
+.navigation-grid {
+  display: grid;
+  grid-template-columns: 200px 400px;
+  justify-content: space-between;
+}
+.navigation-left {
+  vertical-align: middle;
+}
+
+.square {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  font-style: normal;
+}
+.square-b {
+  font-family: "NanumSquareBold";
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+  font-family: "NanumBarunGothic";
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.gameContainer {
+  padding-top: 300px;
+  height: 100vh;
+}
+
+.hiddenButton {
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  top: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 999px;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: oklch(32.11% 0 0);
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.hiddenButton:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+.gameContainer1 {
+  background-color: oklch(86.48% 0.07 18);
+}
+
+.gameContainer2 {
+  background-color: oklch(92.43% 0.05 67);
+}
+
+.gameContainer3 {
+  background-color: oklch(98.51% 0.08 107);
+}
+.gameContainer3 .hiddenButton {
+  display: none;
+  left: 1180px;
+}
+
+.gameContainer4 {
+  background-color: oklch(94.17% 0.1 144);
+}
+.gameContainer4 .hiddenButton {
+  cursor: none;
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+  visibility: hidden;
+}
+
+.gameContainer5 {
+  background-color: oklch(95.79% 0.06 196);
+}
+
+.gameContainer6 {
+  background-color: oklch(85.5% 0.09 306);
+}
+.gameContainer6 .hiddenButton {
+  z-index: -1;
+  position: absolute;
+}
+
+.gameContainer7 {
+  background-color: oklch(88.43% 0.108 326);
+}
+.gameContainer7 .hiddenButton {
+  visibility: hidden;
+}

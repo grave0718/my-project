@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "vak2ayi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>yes, it`s kyuwon!!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation barun">
+        <div class="navigation-grid">
+          <div class="navigation-left">
+            <div class="logo">
+              <div class="epilogue f32">Long Live The KKW</div>
+              <!-- <img width="50" height="50" src="../../assets/LLTKc.png" alt="" /> -->
+            </div>
+          </div>
+          <div class="navigation-right epilogue">
+            <a class="f32" href="../../index.html#about">About</a>
+            <a class="f32" href="../artwork/index.html">Artwork</a>
+            <a class="f32" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="gridbox">
+        <iframe
+          class="scratch-game"
+          src="https://scratch.mit.edu/projects/301244341/embed"
+          allowtransparency="true"
+          width="648"
+          height="648"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+        ></iframe>
+        <span class="epilogue f40">z:니모 부화 시키기 x:도리 부화 시키기</span>
+        <span class="epilogue f40">q:니모 밥 주기 w:도리 밥 주기</span>
+        <span class="epilogue f40"
+          >어느정도 커지면 클릭해서 판매 할 수 있습니다. 상점에 들릴 시 하루가
+          지나갑니다.</span
+        >
+      </div>
+    </div>
+  </body>
+</html>

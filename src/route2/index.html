@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "vak2ayi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <title>yes, it`s kyuwon!!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <div class="navigation-grid">
+          <div class="navigation-left">
+            <div class="logo">
+              <div class="epilogue f32">Long Live The KKW</div>
+              <!-- <img width="50" height="50" src="../../assets/LLTKc.png" alt="" /> -->
+            </div>
+          </div>
+          <div class="navigation-right epilogue">
+            <a href="../scrolling/index.html#about">About</a>
+            <a href="../artwork/index.html">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-about" id="about">
+          <div class="section-observe">
+            <div class="observer-chk">
+              <div class="section-profile">
+                <img
+                  class="section-profile-myphoto"
+                  src="../../assets/myphoto.png"
+                  alt=""
+                />
+              </div>
+              <div class="section-observe-text epilogue-b">
+                김규원 23/상명대 재학중
+              </div>
+            </div>
+
+            <div class="section-observe-unity icon">
+              <div class="section-observe-unity-img-box">
+                <div class="observer-chk">
+                  <img src="../../assets/Unity.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="section-observe-Clan icon">
+              <div class="section-observe-Clan-img-box">
+                <div class="observer-chk">
+                  <img src="../../assets/CLang.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="section-observe-Webs icon">
+              <div class="section-observe-Webs-img-box">
+                <div class="observer-chk">
+                  <img src="../../assets/webs.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

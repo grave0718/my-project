@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+//
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.f32 {
+  font-size: 32px;
+}
+
+.epilogue {
+  font-family: "epilogue-210", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  &-b {
+    font-family: "epilogue-210", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 36px;
+  gap: 10px;
+}
+.barun {
+  font-family: "NanumBarunGothic";
+  font-weight: 400;
+  font-style: normal;
+
+  &-b {
+    font-family: "NanumBarunGothicBold";
+
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+.square {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  font-style: normal;
+
+  &-b {
+    font-family: "NanumSquareBold";
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: oklch(32.11% 0 0);
+  display: flex;
+  justify-content: center;
+
+  font-family: "epilogue-210", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.container {
+  z-index: 10;
+  width: 100%;
+  // max-width: 1200px;
+  background-color: #ffa500; /* Not too bright orange */
+  // padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.navigation {
+  background-color: oklch(32.11% 0 0);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  vertical-align: middle;
+  margin-inline: auto;
+  top: 0;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    justify-content: space-between;
+  }
+  &-left {
+    vertical-align: middle;
+  }
+}
+
+.section {
+  padding-top: 200px;
+  height: 500vw;
+  &-grid {
+    &-text {
+      font-size: 40px;
+      color: oklch(32.11% 0 0);
+      grid-column: 5;
+    }
+
+    &-unity {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    &-Webs {
+      grid-row: 1;
+      grid-column: 2;
+      transition: transform 0.5s, filter 0.5s;
+      &-img-box:hover {
+        animation-name: rotate;
+        animation-duration: 9s;
+        // animation-fill-mode: forwards;
+        animation-direction: alternate;
+      }
+    }
+    &-Clan {
+      grid-row: 2;
+      grid-column: 3;
+    }
+  }
+  &-profile {
+    column-gap: 10px;
+    // padding-inline: auto;
+    grid-column: 5;
+    grid-row: 1/-1;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+    display: inline;
+    animation-name: Fade-in;
+    animation-duration: 3s;
+
+    &-myphoto {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .icon {
+    width: 200px;
+    height: 200px;
+  }
+}
+.observer-chk {
+  margin-top: 1000px;
+  // opacity: 0;
+  transition: all 1s;
+}
+
+@keyframes rotate {
+  33% {
+    transform: rotate(120deg) scale(1.2);
+  }
+  66% {
+    transform: rotate(240deg) scale(1.2);
+  }
+  99% {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+@keyframes Fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

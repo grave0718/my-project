@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainPage</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <script src="./script/script.js" defer></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "vak2ayi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation barun">
+        <div class="navigation-grid">
+          <div class="navigation-left">
+            <div class="logo">
+              <div class="epilogue f32">Long Live The KKW</div>
+              <!-- <img width="50" height="50" src="../../assets/LLTKc.png" alt="" /> -->
+            </div>
+          </div>
+          <div class="navigation-right epilogue">
+            <a class="f32" href="../../index.html#about">About</a>
+            <a class="f32" href="../artwork/index.html">Artwork</a>
+            <a class="f32" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section1">
+        <div class="gridbox fade-wrap">
+          <img class="fish-img" src="../../assets/game.png" alt="" />
+          <span class="epilogue f40 whiteC"
+            >스크래치를 사용한 물고기 키우기 게임</span
+          >
+          <span class="epilogue f40 whiteC"
+            >만드는 데 사용한 기술 기재 <br />Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Eum, tempora itaque suscipit nisi
+            aliquid necessitatibus iste non error maxime perspiciatis nesciunt
+            autem dolores quo veniam. Rem id consequatur cumque ducimus?
+          </span>
+          <a href="../scratchgame/index.html" class="underscore epilogue whiteC"
+            >more</a
+          >
+        </div>
+      </div>
+      <div class="section section2">
+        <div class="gridbox fade-wrap">
+          <img class="web-img" src="../../assets/webgame.png" alt="" />
+          <span class="epilogue f40 whiteC"
+            >html과 css를 사용한 간단한 탈출 게임</span
+          >
+          <span class="epilogue f40 whiteC"
+            >만드는 데 사용한 기술 기재 <br />Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Eum, tempora itaque suscipit nisi
+            aliquid necessitatibus iste non error maxime perspiciatis nesciunt
+            autem dolores quo veniam. Rem id consequatur cumque ducimus?
+          </span>
+          <a href="../htmlgame/index.html" class="underscore epilogue whiteC"
+            >more</a
+          >
+        </div>
+      </div>
+
+      <footer role="contentinfo">
+        <div class="footer-left">
+          <a href="https://github.com/grave0718"
+            ><img src="../../assets/github-142-svgrepo-com.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/im_kq1/"
+            ><img src="../../assets/insta-svgrepo-com.png" alt=""
+          /></a>
+          <a href="https://arvr.smu.ac.kr/arvr/index.do"
+            ><img src="../../assets/university-svgrepo-com.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-right barun">
+          ©2024 kimkyuwon <br />All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
