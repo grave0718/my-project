@@ -11,11 +11,11 @@ const observer = new IntersectionObserver(
     });
   },
   // 화면에서 해당 요소가 10% 이상 보일 경우 화면에 들어온 것으로 판단함
-  { threshold: 0.4 }
+  { threshold: 1.0 }
 );
 
 // 관찰 대상 설정
-const targetElements = document.querySelectorAll(".fade-wrap");
+const targetElements = document.querySelectorAll(".img");
 targetElements.forEach((element) => {
   observer.observe(element);
 });

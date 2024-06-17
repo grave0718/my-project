@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+//
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+body {
+  // height: 200vh;
+  min-width: 600px;
+  margin: 0;
+  max-width: 1280px;
+  display: grid;
+  margin-inline: auto;
+  background-color: oklch(32.11% 0 0);
+}
+
+.square {
+  font-family: "NanumSquare";
+  font-weight: 400;
+  font-style: normal;
+
+  &-b {
+    font-family: "NanumSquareBold";
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  // font-size: 36px;
+  gap: 10px;
+}
+.navigation {
+  z-index: 10;
+  background-color: oklch(32.11% 0 0);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  vertical-align: middle;
+  // margin-inline: auto;
+  top: 0;
+  white-space: nowrap;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    justify-content: space-between;
+  }
+  &-left {
+    vertical-align: middle;
+  }
+}
+.epilogue {
+  font-family: "epilogue-210", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.whiteC {
+  color: #fff;
+}
+.f32 {
+  font-size: 32px;
+}
+.f40 {
+  font-size: 40px;
+}
+.f56 {
+  font-size: 56px;
+}
+.container {
+  background-color: oklch(91.55% 0.037 86.17);
+}
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.gridbox {
+  display: grid;
+  .square.f40 {
+    margin-inline: auto;
+    margin-block: 20px;
+  }
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+button:hover {
+  background-color: oklch(0.5 0.3 120);
+}
+
+.section {
+  min-height: 50vh;
+  button {
+    transition: 1.5s ease-in-out;
+  }
+}
+
+footer {
+  background-color: transparent;
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(2, minmax(300px, 400px));
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  &-right {
+    align-items: end;
+  }
+  &-left {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 200px));
+    grid-template-rows: 1fr;
+
+    a {
+      margin-left: 30px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Long Live The KKW</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <link
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
+      rel="stylesheet"
+    />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "vak2ayi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <div class="navigation-grid">
+          <div class="navigation-left">
+            <div class="logo">
+              <div class="epilogue f32">Long Live The KKW</div>
+              <!-- <img width="50" height="50" src="../../assets/LLTKc.png" alt="" /> -->
+            </div>
+          </div>
+          <div class="navigation-right epilogue">
+            <a class="f32" href="../../index.html#about">About</a>
+            <a class="f32" href="../artwork/index.html#artwork">Artwork</a>
+            <a class="f32" href="/src/contact/index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="contact gridbox">
+          <h2 class="square f40">Contact</h2>
+          <input
+            class="square"
+            type="text"
+            name="name"
+            placeholder="Your Name"
+          />
+          <input
+            class="square"
+            type="email"
+            name="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            class="square"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    <footer role="contentinfo">
+      <div class="footer-left">
+        <a href="https://github.com/grave0718"
+          ><img src="../../assets/github-142-svgrepo-com.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/im_kq1/"
+          ><img src="../../assets/insta.png" alt=""
+        /></a>
+        <a href="https://arvr.smu.ac.kr/arvr/index.do"
+          ><img src="../../assets/university-svgrepo-com.png" alt=""
+        /></a>
+      </div>
+      <div class="footer-right barun">
+        ©2024 kimkyuwon <br />All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>

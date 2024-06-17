@@ -37,10 +37,41 @@
       })(document);
     </script>
     <script src="./script/script.js" defer></script>
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "vak2ayi",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
   </head>
   <body>
     <div class="container">
-      <div class="navigation barun">
+      <div class="navigation">
         <div class="navigation-grid">
           <div class="navigation-left">
             <div class="logo">
@@ -50,8 +81,8 @@
           </div>
           <div class="navigation-right epilogue">
             <a class="f32" href="/index.html#about">About</a>
-            <a class="f32" href="/src/artwork/index.html">Artwork</a>
-            <a class="f32" href="#contact">Contact</a>
+            <a class="f32" href="/src/artwork/index.html#artwork">Artwork</a>
+            <a class="f32" href="/src/contact/index.html#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -63,37 +94,38 @@
               >존경하는 손 우 성 교수님께..
               <span class="epilogue f40"
                 ><br />
-                제가 아직 2학년이라 포트폴리오에 넣을 수 있는 자료나 결과물이
-                거의 없어서 형태만 갖추었습니다.
+                제가 아직 포트폴리오에 넣을 수 있는 자료나 결과물이 거의 없어서
+                형태만 갖추었습니다.
               </span></span
             >
 
             <span class="epilogue f40"
-              >현재 넣은 자료는 그냥 있어보이는 자료들 넣은 것이고 진짜
-              포트폴리오 만들 때 변경할 예정입니다.</span
+              >메인 페이지는 나에 대해서와 내가 쓸 수 있는 툴, 능력 등이 기재될
+              페이지입니다.</span
+            >
+            <span class="epilogue f40"
+              >하지만 아직은 그냥 아무거나 넣어놨습니다.</span
             >
           </div>
         </div>
         <div class="sec1">
           <div class="section section1" id="section1">
             <div class="fade-wrap gridbox">
-              <img class="myphoto" src="/assets/photo.jpg" alt="" />
-              <span class="epilogue f40 under-text"
-                >김규원/23 상명대학교 재학중/ARVR 미디어 디자인</span
-              >
+              <img class="myphoto" src="assets/zeus.jpg" alt="" />
+              <span class="epilogue f40 under-text"></span>
 
               <span class="epilogue f56 UpText"
-                >About 김규원
+                >About 제우스
                 <span class="epilogue f40"
                   ><br />
-                  고등학교 때부터 아두이노와 코딩을 배우며 VR에 낭만을 느껴
-                  진로를 정한 낭만파로 과제로 바쁜 나날을 보내고 있다.
+                  제우스는 고대 그리스 신화에서 올림포스 신들의 왕으로, 하늘과
+                  천둥의 신이자, 크로노스와 레아의 아들로, 형제들과 힘을 합쳐
+                  아버지를 물리치고 신들의 통치자가 되었다.
                 </span></span
               >
 
               <span class="epilogue f40 DoText"
-                >3D 모델링/코딩/AR/VR쪽의 기술을 사용하며 언젠가 1인 개발의
-                성공신화를 쓰는 게 목표이다.</span
+                >번개, 독수리, 황금 옥좌가 그의 주요 상징입니다.</span
               >
             </div>
           </div>
@@ -102,10 +134,13 @@
         <div class="sec2">
           <div class="section section2" id="section2">
             <div class="fade-wrap gridbox">
-              <img class="myphoto" src="assets/unity1.png" alt="" />
-              <span class="unity-color epilogue f56">유니티 게임 개발</span>
+              <img class="myphoto" src="assets/stos.jpg" alt="" />
+              <span class="unity-color epilogue f56">헤파이스토스</span>
               <span class="unity-color epilogue f40"
-                >개별 개발 경험 + 2학기부터 배울 예정</span
+                >헤파이스토스는 그리스 신화에서 불과 대장장이의 신으로, 주로
+                신들을 위한 무기와 장비를 만드는 역할을 합니다. 그는 제우스와
+                헤라의 아들로, 신체적 결함이 있지만 뛰어난 기술과 지혜로 많은
+                신들과 영웅들에게 중요한 도구를 제공했습니다.</span
               >
             </div>
           </div>
@@ -114,9 +149,14 @@
         <div class="sec3">
           <div class="section section3" id="section3">
             <div class="fade-wrap gridbox">
-              <img class="myphoto" src="assets/Clang.png" alt="" />
-              <span class="epilogue f56">C언어</span>
-              <span class="epilogue f40">코드업 기초 100제 돌파!!!</span>
+              <img class="myphoto" src="assets/apolon.jpg" alt="" />
+              <span class="epilogue f56">아폴론</span>
+              <span class="epilogue f40"
+                >아폴론은 그리스 신화에서 태양, 예언, 음악, 치유의 신으로,
+                제우스와 레토의 아들이며 아르테미스의 쌍둥이 형제입니다. 그는
+                델포이 신탁을 통해 인간에게 예언을 전달하고, 리라를 연주하며
+                예술과 음악을 주관하는 신으로 널리 숭배되었습니다.</span
+              >
             </div>
           </div>
         </div>
@@ -124,10 +164,12 @@
         <div class="sec4">
           <div class="section section4" id="section4">
             <div class="fade-wrap gridbox">
-              <img class="myphoto" src="assets/arduino.png" alt="" />
-              <span class="epilogue f56">아두이노</span>
+              <img class="myphoto" src="assets/poseidon.jpg" alt="" />
+              <span class="epilogue f56">포세이돈</span>
               <span class="epilogue f40"
-                >아두이노의 여러 모듈을 활용해 실제 사용 중</span
+                >포세이돈은 그리스 신화에서 바다, 지진, 말의 신으로, 제우스와
+                하데스의 형제입니다. 그는 삼지창을 들고 있으며, 바다를 다스리며
+                선원과 어부들에게 숭배받는 신입니다.</span
               >
             </div>
           </div>
@@ -136,9 +178,13 @@
         <div class="sec5">
           <div class="section section5" id="section5">
             <div class="fade-wrap gridbox">
-              <img class="myphoto" src="assets/webs.png" alt="" />
-              <span class="epilogue f56">프론트엔드 개발</span>
-              <span class="epilogue f40">지금 보고있는 사이트입니다.</span>
+              <img class="myphoto" src="assets/ares.jpg" alt="" />
+              <span class="epilogue f56">아레스</span>
+              <span class="epilogue f40"
+                >아레스는 그리스 신화에서 전쟁과 폭력의 신으로, 제우스와 헤라의
+                아들입니다. 그는 전쟁의 혼돈과 파괴를 상징하며, 종종 무자비하고
+                잔인한 성격으로 묘사됩니다.</span
+              >
             </div>
           </div>
         </div>
@@ -146,13 +192,13 @@
         <div class="sec6">
           <div class="section section6" id="section6">
             <div class="fade-wrap gridbox">
-              <img class="myphoto" src="assets/certificate.png" alt="" />
-              <span class="epilogue f56">자격증</span>
+              <img class="myphoto" src="assets/venus.jpg" alt="" />
+              <span class="epilogue f56">아프로디테</span>
               <span class="epilogue f40"
-                >정보처리 기능사<br />컴퓨터 활용능력 <br />
-                ITQ마스터 <br />
-                양식조리 기능사</span
-              >
+                >아프로디테는 그리스 신화에서 사랑과 아름다움의 여신으로, 바다의
+                거품에서 태어났습니다. 그녀는 사랑, 미, 욕망을 관장하며 많은
+                신들과 인간들 사이에 사랑과 갈등을 불러일으켰습니다.
+              </span>
             </div>
           </div>
         </div>
@@ -164,7 +210,7 @@
           ><img src="../../assets/github-142-svgrepo-com.png" alt=""
         /></a>
         <a href="https://www.instagram.com/im_kq1/"
-          ><img src="../../assets/insta-svgrepo-com.png" alt=""
+          ><img src="../../assets/insta.png" alt=""
         /></a>
         <a href="https://arvr.smu.ac.kr/arvr/index.do"
           ><img src="../../assets/university-svgrepo-com.png" alt=""

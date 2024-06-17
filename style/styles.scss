@@ -14,6 +14,21 @@ h4 {
 body {
   min-width: 600px;
   margin: 0;
+  max-width: 1280px;
+  display: grid;
+  margin-inline: auto;
+  background-color: oklch(32.11% 0 0);
+  color: oklch(80% 0 0);
+  // background-image: url(../assets/web-bg.png);
+  // background-size: contain;
+}
+
+.ongothic {
+  font-family: "sandoll-ongothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container {
 }
 .barun {
   font-family: "NanumBarunGothic";
@@ -44,7 +59,7 @@ body {
 // }
 .epilogue {
   font-family: "epilogue-210", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 .f32 {
@@ -73,6 +88,10 @@ body {
   // font-size: 36px;
   gap: 10px;
 }
+
+.myphoto {
+  border-radius: 40px;
+}
 .navigation {
   z-index: 10;
   background-color: oklch(32.11% 0 0);
@@ -100,12 +119,12 @@ body {
   min-height: 100vh;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
-  color: #fff;
+  color: oklch(80% 0 0);
   position: relative;
   margin-inline: auto;
 
   .fade-wrap {
-    transition: 3s ease-in-out;
+    transition: 1.5s ease-in-out;
   }
   .gridbox {
     display: grid;
@@ -126,17 +145,21 @@ body {
   margin-inline: auto;
 }
 .sec0 {
-  color: oklch(32.11% 0 0);
-  background-color: oklch(86% 0.045 250);
+  border-radius: 40px;
+
+  color: #fff;
+  background-color: oklch(32.11% 0.02 40);
   .section {
     flex-flow: column;
   }
 }
 
 .sec1 {
-  background-color: oklch(65.17% 0.212 25.27);
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: oklch(32.11% 0.05 80);
   .fade-wrap {
-    transition: 3s ease-in-out;
+    transition: 1.5s ease-in-out;
     top: -50;
     column-gap: 0;
     opacity: 0;
@@ -167,17 +190,22 @@ body {
 }
 
 .sec2 {
+  margin-top: 10px;
+  border-radius: 40px;
+
   .section {
     padding: 0;
   }
   .fade-wrap {
-    transition: 3s ease-in-out;
-    background-color: oklch(50% 0 0);
+    border-radius: 40px;
+    transition: 1.5s ease-in-out;
+    background-color: oklch(50.68% 0 0);
 
     position: relative;
   }
   .fade-wrap.fade-in {
-    background-color: oklch(70% 0 0);
+    border-radius: 40px;
+    background-color: oklch(32.11% 0 0);
   }
   .unity-color {
     color: oklab(50.68% 0 0);
@@ -195,16 +223,18 @@ body {
   }
 }
 .sec3 {
-  background-color: oklch(69% 0.2 45);
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: oklch(32.11% 0.05 120);
   .fade-wrap {
-    transition: 3s ease-in-out;
-    left: -20px;
-    position: relative;
+    transition: 1.5s ease-in-out;
+    // left: -20px;
+    // position: relative;
     opacity: 0;
   }
   .fade-wrap.fade-in {
     opacity: 1;
-    left: 0;
+    // left: 0;
   }
   .gridbox.fade-wrap {
     grid-template-columns: 1fr 1fr;
@@ -218,12 +248,14 @@ body {
   }
 }
 .sec4 {
-  background-color: oklch(57% 0.15 315);
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: oklch(32.11% 0.05 160);
   .fade-wrap {
-    transform: scale(0.5);
-    transition: 3s ease-in-out;
+    // transform: scale(0.5);
+    transition: 1.5s ease-in-out;
 
-    position: relative;
+    // position: relative;
     opacity: 0;
   }
   .gridbox.fade-wrap {
@@ -234,7 +266,7 @@ body {
     }
   }
   .fade-wrap.fade-in {
-    transform: scale(1);
+    // transform: scale(1);
     opacity: 1;
   }
   .f40 {
@@ -242,9 +274,11 @@ body {
   }
 }
 .sec5 {
-  background-color: oklch(74% 0.1 175);
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: oklch(32.11% 0.05 200);
   .fade-wrap {
-    transition: 3s ease-in-out;
+    transition: 1.5s ease-in-out;
 
     position: relative;
     opacity: 0;
@@ -265,9 +299,11 @@ body {
   }
 }
 .sec6 {
-  background-color: oklch(86% 0.17 90);
+  margin-top: 10px;
+  border-radius: 40px;
+  background-color: oklch(32.11% 0.05 240);
   .fade-wrap {
-    transition: 3s ease-in-out;
+    transition: 1.5s ease-in-out;
 
     position: relative;
     opacity: 0;
