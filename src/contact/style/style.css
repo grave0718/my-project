@@ -84,7 +84,7 @@ body {
 }
 
 .container {
-  background-color: oklch(91.55% 0.037 86.17);
+  background-color: oklch(32.11% 0 0);
 }
 
 .contact {
@@ -93,6 +93,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+.contact .epilogue.f56 {
+  color: #fff;
+  text-align: center;
+  margin-block: 50px;
+}
 
 .gridbox {
   display: grid;
@@ -100,6 +105,19 @@ body {
 .gridbox .square.f40 {
   margin-inline: auto;
   margin-block: 20px;
+}
+
+.grid {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr;
+}
+
+.send-btn {
+  margin-block: 10px;
+  padding: 5px;
+  max-width: 55px;
+  min-width: 55px;
 }
 
 .contact input,

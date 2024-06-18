@@ -80,9 +80,14 @@ body {
   font-size: 56px;
 }
 .container {
-  background-color: oklch(91.55% 0.037 86.17);
+  background-color: oklch(32.11% 0 0);
 }
 .contact {
+  .epilogue.f56 {
+    color: #fff;
+    text-align: center;
+    margin-block: 50px;
+  }
   max-width: 600px;
   margin: 0 auto;
   display: flex;
@@ -94,6 +99,18 @@ body {
     margin-inline: auto;
     margin-block: 20px;
   }
+}
+.grid {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr;
+  // padding-inline: 20px;
+}
+.send-btn {
+  margin-block: 10px;
+  padding: 5px;
+  max-width: 55px;
+  min-width: 55px;
 }
 .contact input,
 .contact textarea {
