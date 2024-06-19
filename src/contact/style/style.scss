@@ -54,7 +54,7 @@ body {
 
   &-grid {
     display: grid;
-    grid-template-columns: 200px 400px;
+    grid-template-columns: 200px minmax(200px, 300px);
     justify-content: space-between;
   }
   &-left {
