@@ -57,6 +57,9 @@ body {
   grid-template-columns: 200px minmax(200px, 300px);
   justify-content: space-between;
 }
+.navigation-grid .epilogue {
+  font-weight: 700;
+}
 .navigation-left {
   vertical-align: middle;
 }

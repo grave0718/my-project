@@ -56,6 +56,9 @@ body {
     display: grid;
     grid-template-columns: 200px minmax(200px, 300px);
     justify-content: space-between;
+    .epilogue {
+      font-weight: 700;
+    }
   }
   &-left {
     vertical-align: middle;
