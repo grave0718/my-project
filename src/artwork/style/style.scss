@@ -103,9 +103,7 @@ body {
   background-color: oklch(32.11% 0.05 185);
   // border-radius: 40px;
 }
-.img {
-  // min-width: 300px;
-}
+
 .gridbox {
   grid-template-columns: repeat(2, minmax(200px, 500px));
   display: grid;
