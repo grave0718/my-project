@@ -106,8 +106,12 @@ body {
   background-color: oklch(32.11% 0.05 185);
 }
 
+.img {
+  min-width: 300px;
+}
+
 .gridbox {
-  grid-template-columns: repeat(2, minmax(200px, 500px));
+  grid-template-columns: repeat(2, minmax(3580250px, 500px));
   display: grid;
   gap: 20px;
   width: 80%;
